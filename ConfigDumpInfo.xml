@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="CommonModule.МенеджерОбменаЧерезУниверсальныйФормат" id="6e1533aa-48aa-4559-9c98-4e8eb68ad644" configVersion="661587ad473a60e68ad0030c9113085f2608900b"/>
+		<Metadata name="CommonModule.МенеджерОбменаЧерезУниверсальныйФормат.Module" id="6e1533aa-48aa-4559-9c98-4e8eb68ad644.0" configVersion="8f08e084da2f3b182df23635a902fc1d5427becc"/>
+		<Metadata name="CommonModule.ОбменДаннымиПереопределяемый" id="e1956170-1a0b-4056-8772-cc26158f0d90" configVersion="8aec1e33ad7e449c84d083c15cb05f124c47ba50"/>
+		<Metadata name="CommonModule.ОбменДаннымиПереопределяемый.Module" id="e1956170-1a0b-4056-8772-cc26158f0d90.0" configVersion="0dfef2d0f951e7849b68a7fbac88ce649b098aeb"/>
+		<Metadata name="CommonModule.УСО2КД3_МодульМенеджера" id="42b2d901-db73-49c3-923c-a7ecb3d97173" configVersion="512719d5a984b5f305d438bd03e3c05488672e37"/>
+		<Metadata name="CommonModule.УСО2КД3_МодульМенеджера.Module" id="42b2d901-db73-49c3-923c-a7ecb3d97173.0" configVersion="64f547c8b993218f61376b2155cfa017149a37c0"/>
+		<Metadata name="CommonModule.УСО2КД3_ПравилаКонвертации" id="5c4a05e4-b6a0-425b-a949-eb14dbd2369f" configVersion="dbdaaa9378feee9003eeda6602d3ae6e12937953"/>
+		<Metadata name="CommonModule.УСО2КД3_ПравилаКонвертации.Module" id="5c4a05e4-b6a0-425b-a949-eb14dbd2369f.0" configVersion="59636d68a07cc9ce806c085c4733b8c61d549b79"/>
+		<Metadata name="Configuration.ОбменСERPУСО2КД3" id="f562c9d9-0ca9-429f-9676-e45c6fce3b15" configVersion="5e0edb7e7265fa5e228fa930da781f69e0cc76a5"/>
+		<Metadata name="Document.ПриемНаРаботу" id="de887002-8df6-446b-9074-e18dcb193932" configVersion="5cfccfa9a24a363a6ec889caf898b28e6c441e23"/>
+		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат" id="853db221-cd51-4c1f-8f96-55846f6b72b7" configVersion="5387c99cf4085b9d1228c102fc0a8c730246e9ba"/>
+		<Metadata name="ExchangePlan.СинхронизацияДанныхЧерезУниверсальныйФормат.Content" id="853db221-cd51-4c1f-8f96-55846f6b72b7.1" configVersion="5152ba1ca666c83b16922a8e92a1c6797693f57b"/>
+		<Metadata name="Language.Русский" id="19507589-a6c3-4657-a900-630bd2c4a10e" configVersion="03f9e7e1ece35a8b9c073738cb25f6f497fa1312"/>
+		<Metadata name="Role.УСО2КД3_ОсновнаяРоль" id="c6bf1c0a-6a2d-44ef-b21b-5b3eb156b5ed" configVersion="cdaa50628e2550c16c5ea65c0e5796d853e54801"/>
+		<Metadata name="XDTOPackage.УСО2КД3_ФорматКадры" id="3858c73f-ddfc-491d-a7f6-f9b25e716065" configVersion="71e7a2e4dd09cf6108875bf6365ef32ef4ecd614"/>
+		<Metadata name="XDTOPackage.УСО2КД3_ФорматКадры.Package" id="3858c73f-ddfc-491d-a7f6-f9b25e716065.0" configVersion="d86cf084f14ec9686138040aa2c443e49e79d5cc"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
