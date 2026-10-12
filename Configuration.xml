@@ -72,7 +72,11 @@
 			<CommonModule>УСО2КД3_МодульМенеджера</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>УСО2КД3_ФорматКадры</XDTOPackage>
+			<Document>КадровыйПереводСписком</Document>
 			<Document>ПриемНаРаботу</Document>
+			<Document>Увольнение</Document>
+			<Document>КадровыйПеревод</Document>
+			<Document>УвольнениеСписком</Document>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

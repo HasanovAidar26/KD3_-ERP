@@ -1,12 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ExchangePlanContent xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Item>
+		<Metadata>Document.КадровыйПеревод</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Document.Увольнение</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Document.ПриемНаРаботу</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Document.КадровыйПереводСписком</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Document.УвольнениеСписком</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.ШтатноеРасписание</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<ExtensionProperty>
 		<Item>
 			<Metadata>Document.ПриемНаРаботу</Metadata>
+			<State>Modify</State>
+		</Item>
+		<Item>
+			<Metadata>Document.Увольнение</Metadata>
+			<State>Modify</State>
+		</Item>
+		<Item>
+			<Metadata>Document.КадровыйПеревод</Metadata>
+			<State>Modify</State>
+		</Item>
+		<Item>
+			<Metadata>Document.КадровыйПереводСписком</Metadata>
+			<State>Modify</State>
+		</Item>
+		<Item>
+			<Metadata>Document.УвольнениеСписком</Metadata>
+			<State>Modify</State>
+		</Item>
+		<Item>
+			<Metadata>Catalog.ШтатноеРасписание</Metadata>
 			<State>Modify</State>
 		</Item>
 	</ExtensionProperty>

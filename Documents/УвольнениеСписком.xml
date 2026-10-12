@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="e5f13a33-b54b-4d0b-bd23-2385b1c414ae">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УвольнениеСписком" category="Object">
+				<xr:TypeId>f1bb4cbb-9951-43df-ac6e-0752aa7ae07e</xr:TypeId>
+				<xr:ValueId>ba813014-defc-4fe5-9698-b48bd76ad78a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УвольнениеСписком" category="Ref">
+				<xr:TypeId>e38d9bcc-2ff2-419d-bc8d-7424f0c02f13</xr:TypeId>
+				<xr:ValueId>11bf7a05-a8da-4ec0-be7f-44f1d8e056f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УвольнениеСписком" category="Selection">
+				<xr:TypeId>53923f2f-a7f9-460e-bd15-f68e4b4a1fc9</xr:TypeId>
+				<xr:ValueId>41cd2b8e-07c0-4ac6-9a0c-f5499896b9c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УвольнениеСписком" category="List">
+				<xr:TypeId>e218749e-d033-4f6f-a8ee-70218cc0fca2</xr:TypeId>
+				<xr:ValueId>fcdf5905-1aec-47d0-abba-cbd8328d4573</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УвольнениеСписком" category="Manager">
+				<xr:TypeId>ecab1ecb-d581-4084-b6f9-cc11328d296e</xr:TypeId>
+				<xr:ValueId>9c7ad1a7-ad0e-47b4-bdbb-5eaabcbde6dc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УвольнениеСписком</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>335e60f5-ab7c-4f13-8dfe-00aa3e74b6e6</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

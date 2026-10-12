@@ -89,20 +89,19 @@
 	<objectType name="Документ.ПриемНаРаботу.Показатели.Строка">
 		<property name="ИдентификаторСтрокиВидаРасчета" type="xs:decimal" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатель" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты" lowerBound="0"/>
-		<property name="Значение" type="xs:anyType" lowerBound="0"/>
+		<property name="Значение" type="xs:decimal" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
 	</objectType>
 	<objectType name="Документ.ПриемНаРаботу.Показатели">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.ПриемНаРаботу.Показатели.Строка" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType name="Документ.КадровыйПеревод.Начисления.Строка">
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Действие" type="d3p1:ДействияСНачислениямиИУдержаниями" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисление" type="d3p1:КлючевыеСвойстваНачисления" lowerBound="0"/>
 		<property name="ИдентификаторСтрокиВидаРасчета" type="xs:decimal" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДокументОснование" type="d3p1:ЛюбаяСсылка" lowerBound="0"/>
 		<property name="Размер" type="xs:decimal" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ХарактерНачисления" type="d3p1:ХарактерПлановогоНачисления" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+		<property name="Действие" type="xs:string" lowerBound="0"/>
+		<property name="КатегорияНачисления" type="xs:string" lowerBound="0"/>
 	</objectType>
 	<objectType name="Документ.КадровыйПеревод.Начисления">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПеревод.Начисления.Строка" lowerBound="0" upperBound="-1"/>
@@ -110,9 +109,10 @@
 	<objectType name="Документ.КадровыйПеревод.Показатели.Строка">
 		<property name="ИдентификаторСтрокиВидаРасчета" type="xs:decimal" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатель" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты" lowerBound="0"/>
-		<property name="Значение" type="xs:anyType" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Действие" type="d3p1:ДействияСНачислениямиИУдержаниями" lowerBound="0"/>
+		<property name="Значение" type="xs:decimal" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+		<property name="Действие" type="xs:string" lowerBound="0"/>
+		<property name="ПредопределенныйПоказатель" type="xs:string" lowerBound="0"/>
 	</objectType>
 	<objectType name="Документ.КадровыйПеревод.Показатели">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПеревод.Показатели.Строка" lowerBound="0" upperBound="-1"/>
@@ -130,6 +130,19 @@
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ГрафикРаботы" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="РазрядКатегория" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ПКУ" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0"/>
+		<property name="ДлительностьИспытательногоСрока" type="xs:decimal" lowerBound="0"/>
+		<property name="Руководитель" type="xs:string" lowerBound="0"/>
+		<property name="ДолжностьРуководителя" type="xs:string" lowerBound="0"/>
+		<property name="НачисленияУтверждены" type="xs:boolean" lowerBound="0"/>
+		<property name="СпособРасчетаАванса" type="xs:string" lowerBound="0"/>
+		<property name="ТрудоваяФункция" type="xs:string" lowerBound="0"/>
+		<property name="ОтразитьВТрудовойКнижке" type="xs:boolean" lowerBound="0"/>
+		<property name="НаименованиеДокумента" type="xs:string" lowerBound="0"/>
+		<property name="НачалоТрудовойДеятельности" type="xs:boolean" lowerBound="0"/>
+		<property name="ВидЗаявленияОВыбореСпособаВеденияТрудовойКнижки" type="xs:string" lowerBound="0"/>
+		<property name="ДатаЗаявленияОВыбореСпособаВеденияТрудовойКнижки" type="xs:dateTime" lowerBound="0"/>
+		<property name="ИсправленныйДокумент" type="xs:string" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
 		<property name="Комментарий" type="xs:string" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисления" type="d3p1:Документ.ПриемНаРаботу.Начисления" lowerBound="0"/>
@@ -139,7 +152,7 @@
 	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.КадровыйПеревод" base="d2p1:Object">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКадровыйПеревод"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбособленноеПодразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбособленноеПодразделение" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
 		<property name="ДатаНачала" type="xs:dateTime" lowerBound="0"/>
@@ -150,12 +163,34 @@
 		<property name="КоличествоСтавок" type="xs:decimal" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ГрафикРаботы" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="РазрядКатегория" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0"/>
+		<property name="СпособРасчетаАванса" type="xs:string" lowerBound="0"/>
+		<property name="ВидДоговора" type="xs:string" lowerBound="0"/>
+		<property name="НачисленияУтверждены" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьПодразделениеИДолжность" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьТерриторию" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьРабочееМесто" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьГрафикРаботы" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьНачисления" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьЕжегодныеОтпуска" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьВидЗанятости" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьАванс" type="xs:boolean" lowerBound="0"/>
+		<property name="Аванс" type="xs:decimal" lowerBound="0"/>
+		<property name="ОтразитьВТрудовойКнижке" type="xs:boolean" lowerBound="0"/>
+		<property name="НаименованиеДокумента" type="xs:string" lowerBound="0"/>
+		<property name="ИсправленныйДокумент" type="xs:string" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0"/>
 		<property name="ПричинаПеревода" type="xs:string" lowerBound="0"/>
 		<property name="ОснованиеПеревода" type="xs:string" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
 		<property name="Комментарий" type="xs:string" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисления" type="d3p1:Документ.КадровыйПеревод.Начисления" lowerBound="0"/>
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатели" type="d3p1:Документ.КадровыйПеревод.Показатели" lowerBound="0"/>
+		<property name="Руководитель" type="xs:string" lowerBound="0"/>
+		<property name="ДолжностьРуководителя" type="xs:string" lowerBound="0"/>
+		<property name="ТрудоваяФункция" type="xs:string" lowerBound="0"/>
+		<property name="ПорядокРасчетаСтоимостиЕдиницыВремени" type="xs:string" lowerBound="0"/>
+		<property name="СовокупнаяТарифнаяСтавка" type="xs:decimal" lowerBound="0"/>
+		<property name="ВидТарифнойСтавки" type="xs:string" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.Увольнение" base="d2p1:Object">
@@ -164,10 +199,22 @@
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
 		<property name="ДатаУвольнения" type="xs:dateTime" lowerBound="0"/>
+		<property name="ПериодРегистрации" type="xs:dateTime" lowerBound="0"/>
+		<property name="МесяцНачалаРасчетов" type="xs:dateTime" lowerBound="0"/>
+		<property name="СреднемесячноеКоличествоДнейЧасов" type="xs:decimal" lowerBound="0"/>
+		<property name="КратностьВыходногоПособия" type="xs:decimal" lowerBound="0"/>
+		<property name="ДнейКомпенсацииУдержанияОтпуска" type="xs:decimal" lowerBound="0"/>
+		<property name="ПризнакКомпенсацииУдержанияОтпуска" type="xs:string" lowerBound="0"/>
+		<property name="ПорядокВыплаты" type="xs:string" lowerBound="0"/>
+		<property name="ПланируемаяДатаВыплаты" type="xs:dateTime" lowerBound="0"/>
+		<property name="ОтразитьВТрудовойКнижке" type="xs:boolean" lowerBound="0"/>
+		<property name="НаименованиеДокумента" type="xs:string" lowerBound="0"/>
 		<property name="ОснованиеУвольнения" type="xs:string" lowerBound="0"/>
-		<property name="СтатьяТК" type="xs:string" lowerBound="0"/>
+		<property name="СтатьяТКРФ" type="xs:string" lowerBound="0"/>
 		<property name="Комментарий" type="xs:string" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
+		<property name="ИсправленныйДокумент" type="xs:string" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
 	</objectType>
 	<objectType name="Документ.ПриемНаРаботуСписком.Сотрудники.Строка">
@@ -198,58 +245,6 @@
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Сотрудники" type="d3p1:Документ.ПриемНаРаботуСписком.Сотрудники" lowerBound="0"/>
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
 	</objectType>
-	<objectType name="Документ.КадровыйПереводСписком.Сотрудники.Строка">
-		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбособленноеПодразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
-		<property name="ДатаНачала" type="xs:dateTime" lowerBound="0"/>
-		<property name="ДатаОкончания" type="xs:dateTime" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Должность" type="d3p1:КлючевыеСвойстваДолжности" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДолжностьПоШтатномуРасписанию" type="d3p1:КлючевыеСвойстваШтатноеРасписание" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ВидЗанятости" type="d3p1:ВидыЗанятости" lowerBound="0"/>
-		<property name="КоличествоСтавок" type="xs:decimal" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ГрафикРаботы" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="РазрядКатегория" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0"/>
-		<property name="ПричинаПеревода" type="xs:string" lowerBound="0"/>
-		<property name="ОснованиеПеревода" type="xs:string" lowerBound="0"/>
-		<property name="Комментарий" type="xs:string" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисления" type="d3p1:Документ.КадровыйПеревод.Начисления" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатели" type="d3p1:Документ.КадровыйПеревод.Показатели" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
-	</objectType>
-	<objectType name="Документ.КадровыйПереводСписком.Сотрудники">
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПереводСписком.Сотрудники.Строка" lowerBound="0" upperBound="-1"/>
-	</objectType>
-	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.КадровыйПереводСписком" base="d2p1:Object">
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКадровыйПереводСписком"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
-		<property name="Комментарий" type="xs:string" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Сотрудники" type="d3p1:Документ.КадровыйПереводСписком.Сотрудники" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
-	</objectType>
-	<objectType name="Документ.УвольнениеСписком.Сотрудники.Строка">
-		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
-		<property name="ДатаУвольнения" type="xs:dateTime" lowerBound="0"/>
-		<property name="ОснованиеУвольнения" type="xs:string" lowerBound="0"/>
-		<property name="СтатьяТК" type="xs:string" lowerBound="0"/>
-		<property name="Комментарий" type="xs:string" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
-	</objectType>
-	<objectType name="Документ.УвольнениеСписком.Сотрудники">
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.УвольнениеСписком.Сотрудники.Строка" lowerBound="0" upperBound="-1"/>
-	</objectType>
-	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.УвольнениеСписком" base="d2p1:Object">
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваУвольнениеСписком"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
-		<property name="Комментарий" type="xs:string" lowerBound="0"/>
-		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Сотрудники" type="d3p1:Документ.УвольнениеСписком.Сотрудники" lowerBound="0"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
-	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ГрафикиРаботыСотрудников" base="d2p1:Object">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников"/>
 	</objectType>
@@ -258,5 +253,127 @@
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ПоказателиРасчетаЗарплаты" base="d2p1:Object">
 		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Сотрудники.Строка">
+		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Подразделение" type="d3p1:КлючевыеСвойстваПодразделение" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбособленноеПодразделение" type="d3p1:КлючевыеСвойстваОрганизация" lowerBound="0"/>
+		<property name="ДатаНачала" type="xs:dateTime" lowerBound="0"/>
+		<property name="ДатаОкончания" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Должность" type="d3p1:КлючевыеСвойстваДолжности" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ДолжностьПоШтатномуРасписанию" type="d3p1:КлючевыеСвойстваШтатноеРасписание" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ВидЗанятости" type="d3p1:ВидыЗанятости" lowerBound="0"/>
+		<property name="КоличествоСтавок" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="ГрафикРаботы" type="d3p1:КлючевыеСвойстваГрафикиРаботыСотрудников" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="РазрядКатегория" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0"/>
+		<property name="ИзменитьПодразделениеИДолжность" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьТерриторию" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьРабочееМесто" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьГрафикРаботы" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьНачисления" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьЕжегодныеОтпуска" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьВидЗанятости" type="xs:boolean" lowerBound="0"/>
+		<property name="ИзменитьАванс" type="xs:boolean" lowerBound="0"/>
+		<property name="СпособРасчетаАванса" type="xs:string" lowerBound="0"/>
+		<property name="Аванс" type="xs:decimal" lowerBound="0"/>
+		<property name="ПорядокРасчетаСтоимостиЕдиницыВремени" type="xs:string" lowerBound="0"/>
+		<property name="СовокупнаяТарифнаяСтавка" type="xs:decimal" lowerBound="0"/>
+		<property name="ВидТарифнойСтавки" type="xs:string" lowerBound="0"/>
+		<property name="ТрудоваяФункция" type="xs:string" lowerBound="0"/>
+		<property name="ОтразитьВТрудовойКнижке" type="xs:boolean" lowerBound="0"/>
+		<property name="ПричинаПеревода" type="xs:string" lowerBound="0"/>
+		<property name="ОснованиеПеревода" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Сотрудники">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПереводСписком.Сотрудники.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Начисления.Строка">
+		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
+		<property name="Действие" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисление" type="d3p1:КлючевыеСвойстваНачисления" lowerBound="0"/>
+		<property name="ИдентификаторСтрокиВидаРасчета" type="xs:decimal" lowerBound="0"/>
+		<property name="Размер" type="xs:decimal" lowerBound="0"/>
+		<property name="КатегорияНачисления" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Начисления">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПереводСписком.Начисления.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Показатели.Строка">
+		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
+		<property name="ИдентификаторСтрокиВидаРасчета" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатель" type="d3p1:КлючевыеСвойстваПоказателиРасчетаЗарплаты" lowerBound="0"/>
+		<property name="Значение" type="xs:decimal" lowerBound="0"/>
+		<property name="Действие" type="xs:string" lowerBound="0"/>
+		<property name="ПредопределенныйПоказатель" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.КадровыйПереводСписком.Показатели">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.КадровыйПереводСписком.Показатели.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.КадровыйПереводСписком" base="d2p1:Object">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКадровыйПереводСписком"/>
+		<property name="ВидДоговора" type="xs:string" lowerBound="0"/>
+		<property name="ДатаСобытия" type="xs:dateTime" lowerBound="0"/>
+		<property name="НачисленияУтверждены" type="xs:boolean" lowerBound="0"/>
+		<property name="Руководитель" type="xs:string" lowerBound="0"/>
+		<property name="ДолжностьРуководителя" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеДокумента" type="xs:string" lowerBound="0"/>
+		<property name="ИсправленныйДокумент" type="xs:string" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Сотрудники" type="d3p1:Документ.КадровыйПереводСписком.Сотрудники" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Начисления" type="d3p1:Документ.КадровыйПереводСписком.Начисления" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Показатели" type="d3p1:Документ.КадровыйПереводСписком.Показатели" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.УвольнениеСписком.Сотрудники.Строка">
+		<property name="ИдентификаторСтрокиСотрудника" type="xs:decimal" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Сотрудник" type="d3p1:КлючевыеСвойстваСотрудники" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ФизическоеЛицо" type="d3p1:КлючевыеСвойстваФизическоеЛицо" lowerBound="0"/>
+		<property name="ДатаУвольнения" type="xs:dateTime" lowerBound="0"/>
+		<property name="СтатьяТКРФ" type="xs:string" lowerBound="0"/>
+		<property name="ОснованиеУвольнения" type="xs:string" lowerBound="0"/>
+		<property name="ДнейКомпенсацииУдержанияОтпуска" type="xs:decimal" lowerBound="0"/>
+		<property name="ПризнакКомпенсацииУдержанияОтпуска" type="xs:string" lowerBound="0"/>
+		<property name="ВидРасчетаКомпенсацииУдержанияОтпуска" type="xs:string" lowerBound="0"/>
+		<property name="ВидРасчетаКомпенсацииУдержанияОтпускаТип" type="xs:string" lowerBound="0"/>
+		<property name="ВидРасчетаКомпенсацииУдержанияОтпускаКатегория" type="xs:string" lowerBound="0"/>
+		<property name="ВыходноеПособие" type="xs:string" lowerBound="0"/>
+		<property name="ВыходноеПособиеКатегория" type="xs:string" lowerBound="0"/>
+		<property name="ДнейЧасовВыходногоПособия" type="xs:decimal" lowerBound="0"/>
+		<property name="КратностьВыходногоПособия" type="xs:decimal" lowerBound="0"/>
+		<property name="МесяцНачалаРасчетов" type="xs:dateTime" lowerBound="0"/>
+		<property name="СреднемесячноеКоличествоДнейЧасов" type="xs:decimal" lowerBound="0"/>
+		<property name="ДатаУведомленияОбУвольнении" type="xs:dateTime" lowerBound="0"/>
+		<property name="ОтразитьВТрудовойКнижке" type="xs:boolean" lowerBound="0"/>
+		<property name="УвольнениеСОсновногоМестаРаботы" type="xs:boolean" lowerBound="0"/>
+		<property name="НачислитьЗарплату" type="xs:boolean" lowerBound="0"/>
+		<property name="ДоначислитьЗарплатуПриНеобходимости" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ИдентификаторСтроки" type="d3p1:ТипИдентификаторСтроки" lowerBound="0"/>
+	</objectType>
+	<objectType name="Документ.УвольнениеСписком.Сотрудники">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Строка" type="d3p1:Документ.УвольнениеСписком.Сотрудники.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.УвольнениеСписком" base="d2p1:Object">
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваУвольнениеСписком"/>
+		<property name="ПериодРегистрации" type="xs:dateTime" lowerBound="0"/>
+		<property name="ДатаСобытия" type="xs:dateTime" lowerBound="0"/>
+		<property name="ПорядокВыплаты" type="xs:string" lowerBound="0"/>
+		<property name="ПланируемаяДатаВыплаты" type="xs:dateTime" lowerBound="0"/>
+		<property name="УвольнениеСОсновногоМестаРаботы" type="xs:boolean" lowerBound="0"/>
+		<property name="Руководитель" type="xs:string" lowerBound="0"/>
+		<property name="ДолжностьРуководителя" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеДокумента" type="xs:string" lowerBound="0"/>
+		<property name="ИсправленныйДокумент" type="xs:string" lowerBound="0"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Ответственный" type="d3p1:КлючевыеСвойстваПользователь" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://uso2.local/EnterpriseData/1.20/Кадры" name="Сотрудники" type="d3p1:Документ.УвольнениеСписком.Сотрудники" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
 	</objectType>
 </package>
